@@ -10,6 +10,7 @@ HEADER = {'Access-Control-Allow-Origin': '*'}
 
 @app.route("/login/", methods=['GET', 'POST'])
 def log_in():
+    print('lol')
     return {'code': '200'}, status.HTTP_200_OK, HEADER
 
 
