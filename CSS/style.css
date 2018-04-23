@@ -1,0 +1,21 @@
+.main-menu li {
+  display: inline-block;
+}
+.main-menu a {
+  padding: 1em;
+  display: block;
+  color: #74924C;
+  border-right: 1px solid #BAD78B;
+  background: rgba(186, 215, 139, .3);
+}
+.main-menu a:hover {background: #BAD78B}
+
+.logo {display: inline-block;}
+
+.main-menu{float:right}
+
+#container{
+    width: 80%;
+    margin:auto;
+    background: #FFF1D6;
+}
