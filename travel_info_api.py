@@ -28,7 +28,16 @@ def log_in():
 
 @app.route("/signup/", methods=['GET', 'POST'])
 def sign_up():
-    return {'code': '201'}, status.HTTP_201_CREATED, HEADER
+    req = request.data.to_dict()
+    login = req['name']
+    password = req['pass']
+    print(login, password)
+    if not session.query(User).filter(User.login == login).all():
+        new_user = User(login=login, password=password)
+        session.add(new_user)
+        session.commit()
+        return {'code': '201'}, status.HTTP_201_CREATED, HEADER
+    return {'code': '400'}, status.HTTP_201_CREATED, HEADER
 
 
 if __name__ == '__main__':
