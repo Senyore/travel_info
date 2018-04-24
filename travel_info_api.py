@@ -1,6 +1,14 @@
 from flask import request
 from flask_api import FlaskAPI, status
-from travel_info import *
+from sqlalchemy import create_engine
+from sqlalchemy.orm import sessionmaker
+from base_model import Comment, Base, User
+
+engine = create_engine('sqlite:///travel_info.db')
+Base.metadata.bind = engine
+DBSession = sessionmaker(bind=engine)
+session = DBSession()
+
 
 app = FlaskAPI(__name__)
 
@@ -10,8 +18,12 @@ HEADER = {'Access-Control-Allow-Origin': '*'}
 
 @app.route("/login/", methods=['GET', 'POST'])
 def log_in():
-    print('lol')
-    return {'code': '200'}, status.HTTP_200_OK, HEADER
+    req = request.data.to_dict()
+    login = req['name']
+    password = req['pass']
+    if session.query(User).filter(User.login == login, User.password == password).all():
+        return {'code': '200'}, status.HTTP_200_OK, HEADER
+    return {'code': '400'}, status.HTTP_200_OK, HEADER
 
 
 @app.route("/signup/", methods=['GET', 'POST'])

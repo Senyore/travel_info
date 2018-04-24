@@ -1,11 +1,4 @@
-from sqlalchemy import create_engine
-from sqlalchemy.orm import sessionmaker
-from base_model import Comment, Base, User
 
-engine = create_engine('sqlite:///travel_info.db')
-Base.metadata.bind = engine
-DBSession = sessionmaker(bind=engine)
-session = DBSession()
 
 
 def log_in(login='colyk', password='1234'):

@@ -2,17 +2,29 @@
 
 const baseUrl = 'http://127.0.0.1:5000/'
 
-$('#login').submit(function (event) {
-event.preventDefault();
-  console.log( $( this ).serialize() );
-  console.log(JSON.stringify($( this ).serialize()))
-  $.ajax({
-        url: baseUrl+'login/',
-        type: 'POST', data: $( this ).serialize(),
+$('#login').submit(log_in)
+$('#reg').click(registrate);
+
+
+function log_in() {
+    event.preventDefault();
+    $.ajax({
+        url: baseUrl + 'login/',
+        type: 'POST',
+        data: $(this).serialize(),
         dataType: 'json',
         success: (data) => {
-            console.log(data);
-            /*process errors in response*/}
-        });
+            if (data['code'] == 400) {
+                $('#error').text('Логин либо пароль не верный')
+                $('#pass').val('');
+                $('#name').val('');
+            } else { console.log("User exist") };
+        }
+    });
 
-})
+}
+
+function registrate() {
+    $("fieldset").append('<input id="pass_r" name="pass" type="password" placeholder="Повторите пароль" required>');
+    console.log('registrate')
+}
