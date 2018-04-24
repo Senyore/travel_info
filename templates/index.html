@@ -1,146 +1,49 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-    <head>
-        <title>Bootstrap Example</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
-        <link rel="stylesheet" href="CSS/style.css" type="text/css" />
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
-    </head>
-    <body>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- CSS fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Jua" rel="stylesheet">
+    <!-- my CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- icons CSS -->
+    <link rel="stylesheet" href="css/fontello.css">
+    <title>Travel_info</title>
+  <body>  
+    <div class="container">
+      <div class="grid">
+          <div>
+            <h1 class="logo">Travel_info</h1>
+          </div>
+          <div class="menu">
+            <ul class="top-nav_menu">
+              <li><a class="mail" href="#">sanya.d1997@mail.ru</a></li>
+              <li><a href="#"><i class="icon-zoom-in"></i></a></li>
+              <li><a href="#"><i class="icon-mail-alt"></i></a></li>
+              <li><a href="#"><i class="icon-doc-inv"></i></a></li>
+              <li><a href="#"><i class="icon-plus-squared"></i></a></li>
+              <li><a href="#"><i class="icon-off"></i></a></li>
+            </ul>
+          </div>
+      </div>
+      <div class="wrapper">
+        <section id="blok">
+          <div class="tabs">
+            <div class="tab active" onclick="pokaz(1)">Tab 1</div>
+            <div class="tab" onclick="pokaz(2)">Tab 2</div>
+            <div class="tab" onclick="pokaz(3)">Tab 3</div>
+          </div> 
+          <div class="content">Content 1</div>    
+        </section>
+      </div>
 
-        <div class="container">
-            <header>
-                <nav class="top-menu">
-                    <a class="logo" href=""><img src="logo.png" alt=""/></a>
-                    <nav class="main-menu">
-                        <ul>
-                            <li><a href="index.html">sanya.d1997@mail.ru</a></li>
-                            <li><a><img src="icon/email-24.jpg" alt=""/></a></li>
-                            <li><a><img src="icon/note-2-24.jpg" alt=""/></a></li>
-                            <li><a><img src="icon/plus-24.jpg" alt=""/></a></li>
-                            <li><a><img src="icon/search-3-24.jpg" alt=""/></a></li>
-                            <li><a><img src="icon/x-mark-24.jpg" alt=""/></a></li>
-                        </ul>
-                    </nav>
-                </nav>
-            </header>
-            <div>
-                <ul class="nav nav-tabs nav-justified">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="index.html">Profile</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="massangers.html">My messenger</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="publics.html">Publication</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="new.html">Dodaj nowe</a>
-                    </li>
-                </ul>
-            </div>
-            <div>
-                <form action="mailto:beatap@cs.pollub.pl" method="post">
-                    <table>
-                        <tbody>
+    </div>
 
-                            <tr> 
-                                <td>Imie(*):</td>
-                                <td>               
-                                    <input type="text"
-                                           pattern="[A-Z][a-z]{2,3}"
-                                           name="imie"
-                                           id="imie"
-                                           required
-                                           title="Alex"
-                                           placeholder="Imie"/>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Nazwisko(*):</td>
-                                <td><input type="text"
-                                           pattern="[A-Z][a-z]{2,20}"
-                                           name="nazwisko"
-                                           id="nazwisko"
-                                           required
-                                           title="Denysiuk"
-                                           placeholder="Nazwisko"
-                                           />
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Plec</td>
-                                <td><input type="radio"
-                                           name="plec"
-                                           id="plec"
-                                           title="Plec"
-                                           value="Kobieta"
-                                           />Kobieta
-                                    <input type="radio"
-                                           title="Plec"
-                                           name="plec"
-                                           value="Mezczyzna"
-                                           />Mezczyzna
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Panstwo</td>
-                                <td>
-                                    <select name="wybor" required>
-                                        <option value="Polska"
-                                                label="Polska"
-                                                selected>
-                                        <option value="Ukraina"
-                                                label="Ukraina">
-                                    </select>
-                                </td>
-                            </tr>
-                            <tr> 
-                                <td>Adres e-mail </td>
-                                <td><input type="email" name="email" size ="30"> </td>
-                            </tr>
-                            <tr>
-                                <td>Numer telefonu</td>
-                                <td><input type="tel" name="telefon" title="Podaj min 6 cyfr" pattern="[0-9]{6,11}" size ="30"> <br></td>
-                            </tr>
-                            <tr>
-                                <td>Zainteresowania</td>
-                                <td>
-                                    <input type="checkbox"
-                                           name="zainteresowania"
-                                           id="zainteresowania"
-                                           title="zainteresowania"
-                                           value="software"
-                                           />Software
-                                    <input type="checkbox"
-                                           title="zainteresowania"
-                                           name="zainteresowania"
-                                           value="hardware"
-                                           />Hardware
-                                    <input type="checkbox"
-                                           title="zainteresowania"
-                                           name="zainteresowania"
-                                           value="Telekomunikacja"
-                                           />Telekomunikacja
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Data urodzenia</td>     
-                                <td><input type="date" name="urodziny"></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <p>*Pola wymagane</p>
-                    <input type="submit" value="Wyślij" id="button1">
-                    <input type="reset" value="Anuluj" id="button2">
-                </form>
-            </div>
-            <a href="login.html">hgjhkjhjghfgfd</a>
-        </div>
-    </body>
+
+
+    <!-- Optional JavaScript -->
+    <script type="text/javascript" src="js/main.js"></script>
+  </body>
 </html>
