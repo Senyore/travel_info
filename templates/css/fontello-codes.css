@@ -1,7 +1,3 @@
 
-.icon-off:before { content: '\e800'; } /* '' */
-.icon-zoom-in:before { content: '\e801'; } /* '' */
-.icon-user:before { content: '\e803'; } /* '' */
-.icon-mail-alt:before { content: '\f0e0'; } /* '' */
-.icon-plus-squared:before { content: '\f0fe'; } /* '' */
-.icon-doc-inv:before { content: '\f15b'; } /* '' */
+.icon-location-outline:before { content: '\e800'; } /* '' */
+.icon-search:before { content: '\e801'; } /* '' */
