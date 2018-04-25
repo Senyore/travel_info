@@ -8,7 +8,7 @@ body{
 	border: 2px dashed #f4b942;
 	padding: 5px 10px;
 	/*margin-left: 20px;*/
-font-family: 'Merienda One', cursive;
+	font-family: 'Merienda One', cursive;
 }
 
 .navbar-brand:hover{background-color: #f5ca53;border: 2px solid #f4b942;
@@ -21,14 +21,30 @@ font-family: 'Merienda One', cursive;
 
 #login{
 	margin-left: 7px;
-margin-right:  7px;
+	margin-right:  7px;
 }
 .card-header{
 	margin: 10px;
+}
+
+.accordion{
+	min-height: 800px;
+	background-color: #fff;
 }
 
 nav{
 	margin-bottom: 20px;
 	border-bottom-left-radius: 5px;
 	border-bottom-right-radius: 5px;
+}
+
+footer{
+	border-top: 2px solid #e2e2e2;
+	padding-top: 18px;
+	padding-bottom: 18px;
+	background-color: #f9f9f9;
+}
+
+footer ul{
+	margin-bottom: 0px;
 }
