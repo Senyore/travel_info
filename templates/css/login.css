@@ -7,22 +7,28 @@ body {
     color: black;
 }
 
-body.my-login-page {
-    background-color: #f7f9fb;
-    font-size: 14px;
-}
-
-.my-login-page .brand h1 {
+.brand h1 {
+    margin-top: 15px;
+    margin-bottom: 25px;
+    font-size: 2em;
+    letter-spacing: 1px;
+    border: 2px dashed #f4b942;
+    padding: 5px 10px;
     font-family: 'Merienda One', cursive;
     text-align: center;
-    font-size: 4em;
-    letter-spacing: 2px;
-    margin: 25px 0px;
-    text-shadow: 2px 2px 5px #fff;
+    width: 190px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .brand h1:hover {
-    text-shadow: 2px 2px 5px #f4d742;
+    background-color: #f5ca53;
+    border: 2px solid #f4b942;
+}
+
+body.my-login-page {
+    background-color: #f7f9fb;
+    font-size: 14px;
 }
 
 
@@ -41,7 +47,7 @@ body.my-login-page {
 }
 
 .my-login-page .card .card-title {
-    margin-bottom: 30px;
+    margin: -10px 0px 10px 0px;
 }
 
 .my-login-page .form-control {
@@ -82,6 +88,18 @@ body.my-login-page {
     border: yellow;
 }
 
+#nickname_s:focus {
+    border: yellow;
+}
+
+#password_s:focus {
+    border: yellow;
+}
+
+#password_rs:focus {
+    border: yellow;
+}
+
 #password {
     color: #000;
 }
@@ -95,6 +113,10 @@ footer {
     margin-top: 30px;
     border-radius: 5px;
     padding: 7px 0px;
+}
+
+#inv_pass {
+    margin-top: 10px;
 }
 
 #show_signup_form {

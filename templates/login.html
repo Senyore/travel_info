@@ -20,7 +20,7 @@
             <div class="row justify-content-md-center h-100">
                 <div class="card-wrapper">
                     <div class="brand">
-                        <a href="index.html"><h1>Info Travel</h1></a>
+                        <a href="index.html"><h1>info Travel</h1></a>
                     </div>
                     <div class="card fat">
                         <div class="card-body">
@@ -42,6 +42,7 @@
                                             <button id="toggle_pass" class="btn btn-outline-warning" type="button"><i id="eye-icon" class="icon-eye-off"></i></button>
                                         </div>
                                     </div>
+                                        <p class="alert alert-danger" style="display:none;" id='inv_pass'>Incorrect nickname or password. Try again.</p>
                                 </div>
                                 <div class="form-group">
                                     <label>
@@ -60,16 +61,18 @@
                             <form id="sign_up" style="display:none;">
                                 <div class="form-group">
                                     <label for="nickname">Nickname</label>
-                                    <input id="nickname" type="text" class="btn-outline-warning form-control" name="nickname" required autofocus>
+                                    <input id="nickname_s" type="text" class="btn-outline-warning form-control" name="nickname" placeholder="nickname" required autofocus>
                                 </div>
                                 <div class="form-group">
                                     <label for="password">Password</label>
-                                    <input id="password" type="password" class="btn-outline-warning form-control" name="password" required data-eye>
+                                    <input id="password_s" type="password" class="btn-outline-warning form-control" name="password" placeholder="********" required data-eye>
                                 </div>
                                 <div class="form-group">
                                     <label for="password_r">Repeat password</label>
-                                    <input id="password_r" type="password" class="btn-outline-warning form-control" name="password_r" required data-eye>
+                                    <input id="password_rs" type="password" class="btn-outline-warning form-control" name="password_r" placeholder="********" required data-eye>
                                 </div>
+                                <p class="alert alert-danger" style="display:none;" id='inv_pass_s'>The passwords you entered do not match.</p>
+                                <p class="alert alert-danger" style="display:none;" id='inv_nick_s'>The nickname that you enter is already in use. Please choose a different name.</p>
                                 <div class="form-group">
                                     <label>
                                         <input type="checkbox" name="aggree" value="1"> I agree to the Terms and Conditions
@@ -116,6 +119,7 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="js/login.js" defer></script>
 </body>
 </body>

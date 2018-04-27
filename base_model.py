@@ -1,5 +1,3 @@
-import os
-import sys
 from sqlalchemy import Column, ForeignKey, Integer, String, DateTime
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import relationship
@@ -26,6 +24,8 @@ class Comment(Base):
     added = Column(DateTime, default=datetime.datetime.now)
 
 
-if __name__ == '__main__':
+def create_db():
     engine = create_engine('sqlite:///travel_info.db')
     Base.metadata.create_all(engine)
+
+    
