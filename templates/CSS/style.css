@@ -13,13 +13,16 @@ body {
     height: 50px;
     text-align: center;
     margin-left: 7px;
+    margin-right: 7px;
     font-family: 'Gugi', cursive;
+    display: none;
 }
 
 
 #comments {
     border-radius: 5px;
     background-color: #f9f9f9;
+    border: 2px solid #e2e2e2;
 }
 
 .navbar-brand {
@@ -55,9 +58,9 @@ body {
     margin-top: 10px;
 }
 
-.card-header {
-    margin: 10px;
-}
+.card-link{color:black;text-decoration: none;}
+
+.card-link:hover{color:#DE5236;}
 
 
 nav {
@@ -67,7 +70,7 @@ nav {
 }
 
 footer {
-    border-top: 2px solid #e2e2e2;
+    border: 2px solid #e2e2e2;
     padding-top: 12px;
     padding-bottom: 12px;
     background-color: #f9f9f9;

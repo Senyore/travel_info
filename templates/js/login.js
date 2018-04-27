@@ -54,11 +54,10 @@ function log_in() {
                 $('#nickname').val('');
                 $("#inv_pass").css('display', 'block')
             } else {
-                render_page();
+                render_page($('#nickname').val(), $('#password').val());
             };
         }
     });
-
 }
 
 
@@ -87,14 +86,16 @@ function sign_up() {
                 $('#password_rs').val('');
                 $('#nickname_s').val('');
             } else {
-                render_page();
+                render_page($('#nickname_s').val(), $('#password_s').val());
             }
         }
     });
 }
 
 
-function render_page() {
+function render_page(name, password) {
+    sessionStorage.nickname = name;
+    sessionStorage.password = password;
     document.location.href = "index.html";
 }
 
