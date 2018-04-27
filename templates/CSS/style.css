@@ -32,6 +32,8 @@ body {
     padding: 5px 10px;
     font-family: 'Gugi', cursive;
     cursor: pointer;
+    transition: background-color 0.4s, border 0.6s;
+    transition-timing-function: ease;
 }
 
 .navbar-brand:hover {
@@ -58,9 +60,14 @@ body {
     margin-top: 10px;
 }
 
-.card-link{color:black;text-decoration: none;}
+.card-link {
+    color: black;
+    text-decoration: none;
+}
 
-.card-link:hover{color:#DE5236;}
+.card-link:hover {
+    color: #DE5236;
+}
 
 
 nav {
@@ -91,11 +98,11 @@ footer a {
     color: black;
 }
 
-footer a:hover {
-    text-decoration: none;
-    color: #f4d742;
+.list-inline-item>a {
+    transition: color 0.4s;
+    transition-timing-function: ease;
 }
 
-canvas {
-    margin-left: 8px;
+.list-inline-item>a:hover {
+    color: #f4d742;
 }

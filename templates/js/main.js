@@ -4,9 +4,6 @@ const baseURL = 'http://127.0.0.1:5000/'
 
 
 function initUI() {
-    // sessionStorage.nickname = 'undefined'
-    // sessionStorage.password = 'undefined'
-
     $(document).ready(render_user_logo);
     $("#login").click(render_login_form);
 }
