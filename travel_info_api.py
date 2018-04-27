@@ -14,7 +14,7 @@ app = FlaskAPI(__name__)
 
 
 HEADER = {'Access-Control-Allow-Origin': '*'}
-
+# Проверить существует ли дб
 
 @app.route("/login/", methods=['GET', 'POST'])
 def log_in():

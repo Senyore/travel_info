@@ -1,50 +1,74 @@
-body{
-
-	background-image: url("bg1.jpeg");
-}
-.navbar-brand{
-	font-size: 1.8em;
-	letter-spacing: 1px;
-	border: 2px dashed #f4b942;
-	padding: 5px 10px;
-	/*margin-left: 20px;*/
-	font-family: 'Merienda One', cursive;
+body {
+    background-image: url("background.jpeg");
+    background-repeat: repeat;
 }
 
-.navbar-brand:hover{background-color: #f5ca53;border: 2px solid #f4b942;
+#accordion {
+    border-radius: 5px;
 }
 
-#all{
-	width: 78%;
-	margin: auto; 
+.navbar-brand {
+    font-size: 1.8em;
+    letter-spacing: 1px;
+    border: 2px dashed #f4b942;
+    padding: 5px 10px;
+    font-family: 'Merienda One', cursive;
 }
 
-#login{
-	margin-left: 7px;
-	margin-right:  7px;
-}
-.card-header{
-	margin: 10px;
+.navbar-brand:hover {
+    background-color: #f5ca53;
+    border: 2px solid #f4b942;
 }
 
-.accordion{
-	min-height: 800px;
-	background-color: #fff;
+#all {
+    width: 78%;
+    margin: auto;
 }
 
-nav{
-	margin-bottom: 20px;
-	border-bottom-left-radius: 5px;
-	border-bottom-right-radius: 5px;
+#login {
+    margin-left: 7px;
+    margin-right: 7px;
 }
 
-footer{
-	border-top: 2px solid #e2e2e2;
-	padding-top: 18px;
-	padding-bottom: 18px;
-	background-color: #f9f9f9;
+.card-header {
+    margin: 10px;
 }
 
-footer ul{
-	margin-bottom: 0px;
+.accordion {
+    min-height: 800px;
+    background-color: #fff;
+}
+
+nav {
+    margin-bottom: 20px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+footer {
+    border-top: 2px solid #e2e2e2;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    background-color: #f9f9f9;
+    margin-top: 20px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+footer ul {
+    margin-bottom: 0px;
+}
+
+footer i {
+    font-size: 40px;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+}
+
+footer a:hover {
+    text-decoration: none;
+    color: #f4d742;
 }

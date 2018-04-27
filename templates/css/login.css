@@ -1,0 +1,119 @@
+body {
+    height: 100%;
+}
+
+.brand a {
+    text-decoration: none;
+    color: black;
+}
+
+body.my-login-page {
+    background-color: #f7f9fb;
+    font-size: 14px;
+}
+
+.my-login-page .brand h1 {
+    font-family: 'Merienda One', cursive;
+    text-align: center;
+    font-size: 4em;
+    letter-spacing: 2px;
+    margin: 25px 0px;
+    text-shadow: 2px 2px 5px #fff;
+}
+
+.brand h1:hover {
+    text-shadow: 2px 2px 5px #f4d742;
+}
+
+
+.my-login-page .card-wrapper {
+    width: 450px;
+    margin: 0 auto;
+}
+
+.my-login-page .card {
+    border-color: transparent;
+    box-shadow: 0 0 40px rgba(0, 0, 0, .05);
+}
+
+.my-login-page .card.fat {
+    padding: 10px;
+}
+
+.my-login-page .card .card-title {
+    margin-bottom: 30px;
+}
+
+.my-login-page .form-control {
+    border-width: 2.3px;
+}
+
+.my-login-page .form-group label {
+    width: 100%;
+}
+
+.my-login-page .btn.btn-block {
+    padding: 12px 10px;
+}
+
+.my-login-page .margin-top20 {
+    margin-top: 20px;
+}
+
+.my-login-page .no-margin {
+    margin: 0;
+}
+
+.my-login-page .footer {
+    margin: 40px 0;
+    color: #888;
+    text-align: center;
+}
+
+#nickname:focus {
+    border: yellow;
+}
+
+#password:focus {
+    border: yellow;
+}
+
+#password_r:focus {
+    border: yellow;
+}
+
+#password {
+    color: #000;
+}
+
+h4 {
+    text-align: center;
+}
+
+footer {
+    padding: 0px;
+    margin-top: 30px;
+    border-radius: 5px;
+    padding: 7px 0px;
+}
+
+#show_signup_form {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 425px) {
+    .my-login-page .card-wrapper {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .my-login-page .card.fat {
+        padding: 0;
+    }
+
+    .my-login-page .card.fat .card-body {
+        padding: 15px;
+    }
+}
