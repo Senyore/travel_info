@@ -92,6 +92,7 @@ function sign_up() {
     });
 }
 
+
 function render_page() {
     document.location.href = "index.html";
 }
