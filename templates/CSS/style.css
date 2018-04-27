@@ -1,6 +1,7 @@
 body {
     background-image: url("background.jpeg");
     background-repeat: repeat;
+    font-family: 'Merriweather', serif;
 }
 
 #user_logo {
@@ -12,6 +13,7 @@ body {
     height: 50px;
     text-align: center;
     margin-left: 7px;
+    font-family: 'Gugi', cursive;
 }
 
 
@@ -25,7 +27,7 @@ body {
     letter-spacing: 1px;
     border: 2px dashed #f4b942;
     padding: 5px 10px;
-    font-family: 'Merienda One', cursive;
+    font-family: 'Gugi', cursive;
     cursor: pointer;
 }
 
@@ -66,8 +68,8 @@ nav {
 
 footer {
     border-top: 2px solid #e2e2e2;
-    padding-top: 18px;
-    padding-bottom: 18px;
+    padding-top: 12px;
+    padding-bottom: 12px;
     background-color: #f9f9f9;
     margin-top: 20px;
     border-radius: 5px;

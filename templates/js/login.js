@@ -6,8 +6,9 @@ function initUI() {
     $('#toggle_pass').click(toggle_password);
     $('#show_signup_form').click(show_signup_form);
     $('#show_login_form').click(show_login_form);
-    $('#log_in').submit(log_in)
-    $('#sign_up').submit(sign_up)
+    $('#log_in').submit(log_in);
+    $('#sign_up').submit(sign_up);
+    $('#password_rs').keyup(check_passwords);
 }
 
 
@@ -61,19 +62,19 @@ function log_in() {
 }
 
 
+function check_passwords() {
+    if ($("#password_s").val() !== $("#password_rs").val()) {
+        $('#inv_pass_s').css('display', 'block');
+        $('#signup_b').prop('disabled', (i, v) => true);
+    } else {
+        $('#signup_b').prop('disabled', (i, v) => false);
+        $('#inv_pass_s').css('display', 'none');
+    }
+}
+
+
 function sign_up() {
     event.preventDefault();
-    let pass = $("#password_s").val();
-    let pass_r = $("#password_rs").val();
-    let name = $("#nickname_s").val();
-
-    if (pass !== pass_r) {
-        $('#password_s').val('');
-        $('#password_rs').val('');
-        $('#inv_pass_s').css('display', 'block');
-        return;
-    }
-    $('#inv_pass_s').css('display', 'none');
     $.ajax({
         url: baseURL + 'signup/',
         type: 'POST',
@@ -85,7 +86,7 @@ function sign_up() {
                 $('#password_s').val('');
                 $('#password_rs').val('');
                 $('#nickname_s').val('');
-            }else {
+            } else {
                 render_page();
             }
         }
