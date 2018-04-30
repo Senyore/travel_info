@@ -21,6 +21,7 @@ app = FlaskAPI(__name__)
 
 HEADER = {'Access-Control-Allow-Origin': '*'}
 
+# Добавить шифрования пароля
 @app.route("/login/", methods=['GET', 'POST'])
 def log_in():
     req = request.data.to_dict()
