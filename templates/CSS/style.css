@@ -106,3 +106,8 @@ footer a {
 .list-inline-item>a:hover {
     color: #f4d742;
 }
+
+::selection {
+    color: white;
+    background-color: #DE5236;
+}
