@@ -10,3 +10,5 @@ pip install sqlalchemy
 python travel_info_api.py
 
 ```
+
+Now open index.html
